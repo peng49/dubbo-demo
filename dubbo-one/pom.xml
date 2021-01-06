@@ -20,10 +20,10 @@
         <junit.version>4.13</junit.version>
         <mysql-connector-java.version>8.0.22</mysql-connector-java.version>
         <mybatis-plus.version>3.4.1</mybatis-plus.version>
+        <dubbo.version>2.7.8</dubbo.version>
     </properties>
 
     <dependencyManagement>
-
         <dependencies>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -42,6 +42,11 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector-java.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -52,4 +57,20 @@
             <version>${junit.version}</version>
         </dependency>
     </dependencies>
+
+
+    <repositories>
+        <repository>
+            <id>alimaven</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
