@@ -9,4 +9,9 @@ public class HelloServiceImpl implements HelloService {
     public String say() {
         return "hello service impl";
     }
+
+    @Override
+    public String say(String string) {
+        return "say : "+string;
+    }
 }

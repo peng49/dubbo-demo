@@ -11,5 +11,22 @@
 
     <artifactId>dubbo-two-server</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>2.7.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-dependencies-zookeeper</artifactId>
+            <version>2.7.6</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>com.github.peng49</groupId>
+            <artifactId>dubbo-one-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>
